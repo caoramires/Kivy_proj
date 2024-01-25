@@ -96,7 +96,6 @@ class MyFirebase():
         }
         requisicao = requests.post(link, data=info)
         requisicao_dic = requisicao.json()
-        print(requisicao_dic)
         local_id = requisicao_dic["user_id"]
         id_token = requisicao_dic["id_token"]
         return local_id, id_token
